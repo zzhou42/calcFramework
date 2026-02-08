@@ -1,0 +1,32 @@
+{
+  "name": "calcframework",
+  "version": "0.0.1",
+  "description": "A paper framework training ",
+  "keywords": [
+    "framework",
+    "training"
+  ],
+  "homepage": "https://github.com/zzhou42/calcFramework#readme",
+  "bugs": {
+    "url": "https://github.com/zzhou42/calcFramework/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzhou42/calcFramework.git"
+  },
+  "license": "MIT",
+  "author": "Zhen Yu Zhou",
+  "type": "commonjs",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node ./src/main.js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/node": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
