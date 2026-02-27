@@ -28,7 +28,7 @@ let namespacePrefix = `testHarness.${baseFileName}.`;
  */
 function bootStrapApplication() {
     let functionName = bootStrapApplication.name;
-    console.log(`BEGIN ${namespacePrefix}${functionName} function`);
+    // console.log(`BEGIN ${namespacePrefix}${functionName} function`);
     rootPath = path.resolve(process.cwd());
     let appConfig = {
         "applicationName": "testHarness",
@@ -36,7 +36,7 @@ function bootStrapApplication() {
         "appConfigReferencePath": "//test//resources//configuration//"
     };
     calcFramework.initFramework(appConfig);
-    console.log(`END ${namespacePrefix}${functionName} function`);    
+    // console.log(`END ${namespacePrefix}${functionName} function`);    
 };
 
 /**

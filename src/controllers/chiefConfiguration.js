@@ -28,21 +28,25 @@ let namespacePrefix = `controllers.${baseFileName}.`;
  */
 function setupConfiguration(appConfigPath, frameworkConfigPath) {
     let functionName = setupConfiguration.name;
-    console.log(`BEGIN ${namespacePrefix}${functionName} function`);
-    console.log(`appConfigPath is: ${appConfigPath}`);
-    console.log(`frameworkConfigPath is: ${frameworkConfigPath}`);
+    // console.log(`BEGIN ${namespacePrefix}${functionName} function`);
+    // console.log(`appConfigPath is: ${appConfigPath}`);
+    // console.log(`frameworkConfigPath is: ${frameworkConfigPath}`);
     configurator.setConfigurationSetting('appConfigPath', appConfigPath);
     configurator.setConfigurationSetting('frameworkConfigPath', frameworkConfigPath);
     let allAppConfigData = {};
     let allFrameworkConfigData = {};
-
+    // TODO: Implement these functions.
     allFrameworkConfigData = chiefData.setupAllJsonConfigData('frameworkConfigPath', 'configuration');
     allAppConfigData = chiefData.setupAllJsonConfigData('appConfigPath', 'configuration');
-    // TODO: parseLoadedConfigurationData
+    // TODO: parseLoadedConfigurationData.
     // NOTE: We cannot really properly implet the parseLoadedConfigurationData until we have a basic business rules system.
     // TODO: mere App Config Data & Framework Config Data.
 
-    console.log(`allAppConfigData is: ${JSON.stringify(allAppConfigData)}`);
-    console.log(`allFrameworkConfigData is: ${JSON.stringify(allFrameworkConfigData)}`);
-    console.log(`END ${namespacePrefix}${functionName} function`);
+    // console.log(`allAppConfigData is: ${JSON.stringify(allAppConfigData)}`);
+    // console.log(`allFrameworkConfigData is: ${JSON.stringify(allFrameworkConfigData)}`);
+    // console.log(`END ${namespacePrefix}${functionName} function`);
+};
+
+module.exports = {
+    ['setupConfiguration']: (appConfigPath, frameworkConfigPath) => setupConfiguration(appConfigPath, frameworkConfigPath)
 };
